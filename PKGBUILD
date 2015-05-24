@@ -1,4 +1,5 @@
-# Maintainer: BlackICE <blackice@craft.net.br>
+# Maintainer: Patrick Wozniak <hello@patwoz.de>
+
 pkgname=pi-blaster-git
 pkgver=20140715.111.485c939
 pkgrel=1
