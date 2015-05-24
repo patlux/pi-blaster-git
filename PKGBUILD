@@ -23,17 +23,17 @@ pkgver() {
 }
 
 prepare() {
-    cd "$_gitname"
-    ./autogen.sh
+  cd "$_gitname"
+  ./autogen.sh
 }
 
 build() {
-    cd "$_gitname"
-    ./configure
-    make
+  cd "$_gitname"
+  ./configure --sbindir=/usr/bin
+  make
 }
 
 package() {
-    cd "$_gitname"
-    make DESTDIR="${pkgdir}" install
+  cd "$_gitname"
+  make DESTDIR="$pkgdir/" install
 }
